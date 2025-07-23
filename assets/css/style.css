@@ -384,28 +384,7 @@ h1, h2 {
 }
 
 .navWrap .navbar .navbar-toggler {
-  background-color: #236192;
-  border-radius: 50%;
   border: 0;
-  padding: 13px;
-  display: flex;
-}
-
-.navWrap .navbar .navbar-toggler svg {
-  width: 30px;
-  fill: #FFFB;
-}
-
-.navWrap .navbar .navbar-toggler:focus {
-  box-shadow: none;
-  border: 0;
-  outline: 0;
-}
-
-.navWrap .navbar .navbar-toggler:focus-visible {
-  box-shadow: none;
-  border: 0;
-  outline: 0;
 }
 
 .navWrap .navbar-brand {
@@ -413,36 +392,6 @@ h1, h2 {
   margin: 0 !important;
   max-width: 272px;
   width: 100%;
-}
-
-.navWrap .navbar-collapse {
-  transition: transform 0.5s;
-}
-
-.navWrap .navbar-collapse .navbar-nav {
-  height: 100vh !important;
-  right: 0;
-  max-height: none;
-  max-width: 100%;
-  position: fixed;
-  transform: translateX(100%);
-  transition: transform 0.5s;
-  visibility: hidden;
-  opacity: 0;
-  width: 256px;
-  border-radius: 0;
-  top: 80px;
-}
-
-.navWrap .navbar-collapse.show {
-  transition: transform 0.5s;
-}
-
-.navWrap .navbar-collapse.show .navbar-nav {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0%);
-  transition: transform 0.5s;
 }
 
 .navWrap .navbar-nav .nav-link {
@@ -457,6 +406,46 @@ h1, h2 {
   border-radius: 64px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .navWrap .navbar .navbar-toggler {
+    background-color: #236192;
+    border-radius: 50%;
+    border: 0;
+    padding: 13px;
+    display: flex;
+  }
+  .navWrap .navbar .navbar-toggler svg {
+    width: 30px;
+    fill: #FFFB;
+  }
+  .navWrap .navbar-collapse {
+    transition: transform 0.5s;
+  }
+  .navWrap .navbar-collapse .navbar-nav {
+    height: 100vh !important;
+    right: 0;
+    max-height: none;
+    max-width: 100%;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    width: 256px;
+    border-radius: 0;
+    top: 80px;
+  }
+  .navWrap .navbar-collapse.show {
+    transition: transform 0.5s;
+  }
+  .navWrap .navbar-collapse.show .navbar-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+  }
 }
 
 @media screen and (max-width: 575px) {
