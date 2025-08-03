@@ -260,6 +260,19 @@ ul {
   row-gap: 20px !important;
 }
 
+.fs24 {
+  font-size: 24px !important;
+}
+
+.fs18 {
+  font-size: 18px !important;
+}
+
+.my48 {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+}
+
 :root {
   --fs65: 65px;
   --fs50: 50px;
@@ -637,14 +650,14 @@ ul.copyright svg {
   height: 20px;
 }
 
-.heroWrap.faqsHero {
+.faqsHero {
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.heroWrap.faqsHero::before {
+.faqsHero::before {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.48) 0%, #fff0 100%);
   width: 100%;
@@ -657,17 +670,17 @@ ul.copyright svg {
   z-index: -1;
 }
 
-.heroWrap.faqsHero .container {
+.faqsHero .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.heroWrap.faqsHero .accordion-button:not(.collapsed) {
+.faqsHero .accordion-button:not(.collapsed) {
   background-color: #236192 !important;
   color: #FCFCFC;
 }
 
-.heroWrap.faqsHero .accordion-button {
+.faqsHero .accordion-button {
   background-color: #54595FCC !important;
   color: #FFFB;
   font-size: 18px;
@@ -675,7 +688,7 @@ ul.copyright svg {
   font-weight: 500;
 }
 
-.heroWrap.faqsHero .accordion-body {
+.faqsHero .accordion-body {
   background-color: #FCFCFC;
   color: #121212CC;
   font-size: 18px;
@@ -683,7 +696,7 @@ ul.copyright svg {
   line-height: 1.5;
 }
 
-.heroWrap.faqsHero .accordion-button::after {
+.faqsHero .accordion-button::after {
   content: "+";
   width: 16px;
   height: 16px;
@@ -692,8 +705,93 @@ ul.copyright svg {
   background: unset;
 }
 
-.heroWrap.faqsHero .accordion-button:not(.collapsed)::after {
+.faqsHero .accordion-button:not(.collapsed)::after {
   content: "-";
+}
+
+.heroWrap.orderHero p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.heroWrap.orderHero .priceBox {
+  background-color: #FFFB;
+  border: 3px solid #FFFB;
+  border-radius: 9px;
+}
+
+.heroWrap.orderHero .priceBox:first-child {
+  border-color: #FFA400;
+  background-color: #FCFCFC;
+}
+
+.heroWrap.orderHero .priceBox:first-child h3 {
+  color: #236192;
+}
+
+.heroWrap.orderHero .priceBox:first-child p {
+  color: #FFA400;
+}
+
+.heroWrap.orderHero .priceBox h3 {
+  color: #FFA400;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.heroWrap.orderHero .priceBox p {
+  color: #236192;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heroWrap.orderHero .priceBox span {
+  color: #54595FCC;
+  font-size: 18px;
+}
+
+.heroWrap.orderHero .priceBox h4 {
+  color: #121212CC;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.heroWrap.orderHero .priceBox h4 .breakdance .price sup {
+  font-size: 60%;
+}
+
+.heroWrap.orderHero .priceBox .boxContent {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.heroWrap.orderHero .priceBox ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heroWrap.orderHero .priceBox ul li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.heroWrap.orderHero .priceBox ul li img {
+  width: 16px;
+}
+
+.grid3Col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 @media (max-width: 1199.98px) {
