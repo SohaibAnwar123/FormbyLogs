@@ -1,24 +1,22 @@
-@media screen and (max-width: 1680px) {
- 
-}
+@media screen and (max-width: 1680px) {}
 
-@media screen and (max-width: 1570px) {
+@media screen and (max-width: 1570px) {}
 
-}
+@media screen and (max-width: 1500px) {}
 
-@media screen and (max-width: 1500px) {
-    
-}
-
-@media screen and (max-width: 1370px) {
-   
-}
+@media screen and (max-width: 1370px) {}
 
 // Ipad pro 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-section {
-    min-height: 600px !important;
+    section {
+        min-height: 600px !important;
+    }
+    .grid3Col {
+    grid-template-columns: repeat(2, 1fr);
+}
+.faqsHero .container {
+    grid-template-columns: 1fr;
 }
 }
 
@@ -27,30 +25,79 @@ section {
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     .heroWrap.faqsHero .container {
-    grid-template-columns: 1fr;
-}
-ul.chev {
-    gap: 8px;
-    flex-direction: column;
-    align-items: start;
-}
+        grid-template-columns: 1fr;
+    }
+
+    ul.chev {
+        gap: 8px;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 //  mobile 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-.orderingInner {
-    grid-template-columns: 1fr;
-    margin-top: 0;
+        .grid3Col {
+        grid-template-columns: 1fr;
+    }
+        :root {
+        --p100: 40px;
+    }
+    .heroWrap.orderHero .priceBox h3 {
+    font-size: 26px;
 }
-.ordering .container{
-padding-left: 0;
-padding-right: 0;
+    .heroWrap {
+        padding-top: 100px !important;
+        min-height: 400px !important;
+    }
+    section{
+        min-height: 400px !important;
+    }
+.orderingInner h3 {
+    font-size: 30px;
 }
-ul.copyright {
-    flex-direction: column;
-    padding-left: 15px;
-padding-right:15px;
+.orderingInner ol, .orderingInner ul {
+    padding-left: 0;
 }
+.faqsHero .accordion-body {
+    font-size: 16px;
+    padding: 10px;
+}
+    h1 {
+        font-size: 45px !important;
+    }
+    h2 {
+        font-size: 40px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    .my48 {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+.fs24 {
+    font-size: 18px !important;
+}
+ svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+    .orderingInner {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .ordering .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    ul.copyright {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }

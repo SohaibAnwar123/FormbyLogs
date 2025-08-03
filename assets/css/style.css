@@ -805,6 +805,12 @@ ul.copyright svg {
   section {
     min-height: 600px !important;
   }
+  .grid3Col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .faqsHero .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -819,6 +825,52 @@ ul.copyright svg {
 }
 
 @media (max-width: 575.98px) {
+  .grid3Col {
+    grid-template-columns: 1fr;
+  }
+  :root {
+    --p100: 40px;
+  }
+  .heroWrap.orderHero .priceBox h3 {
+    font-size: 26px;
+  }
+  .heroWrap {
+    padding-top: 100px !important;
+    min-height: 400px !important;
+  }
+  section {
+    min-height: 400px !important;
+  }
+  .orderingInner h3 {
+    font-size: 30px;
+  }
+  .orderingInner ol, .orderingInner ul {
+    padding-left: 0;
+  }
+  .faqsHero .accordion-body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 45px !important;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .my48 {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+  .fs24 {
+    font-size: 18px !important;
+  }
+  svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
   .orderingInner {
     grid-template-columns: 1fr;
     margin-top: 0;
