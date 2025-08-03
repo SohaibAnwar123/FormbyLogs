@@ -26,6 +26,9 @@ section {
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .heroWrap.faqsHero .container {
+    grid-template-columns: 1fr;
+}
 ul.chev {
     gap: 8px;
     flex-direction: column;

@@ -5,7 +5,7 @@
     color: $whiteColor;
     padding-top: 155px !important;
     position: relative;
-           color: #FFFB;
+    color: #FFFB;
 
     .container {
         display: flex;
@@ -169,11 +169,13 @@ ul.copyright {
     align-items: center;
     color: $whiteColor;
     margin-top: 48px;
-li{
-       display: flex;
-    gap: 8px;
-    align-items: center;
-}
+
+    li {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
     svg {
         stroke: $whiteColor;
         fill: $whiteColor;
@@ -181,3 +183,58 @@ li{
         height: 20px;
     }
 }
+
+// faqs page start 
+.heroWrap.faqsHero {
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &::before {
+        content: "";
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.48) 0%, #fff0 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .container{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .accordion-button:not(.collapsed){
+        background-color: #236192 !important;
+        color: #FCFCFC;
+    }
+    .accordion-button{
+        background-color: #54595FCC !important;
+            color: #FFFB;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 500;
+    }
+    .accordion-body{
+          background-color: #FCFCFC;
+          color: #121212CC;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+    }
+    .accordion-button::after{
+        content: "+";
+            width: 16px;
+    height: 16px;
+    font-size: 16px;
+    transform: unset;
+    background: unset;
+    }
+    .accordion-button:not(.collapsed)::after{
+        content: "-";
+    }
+}
+
+// faqs page end
