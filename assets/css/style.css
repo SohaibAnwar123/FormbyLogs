@@ -722,13 +722,20 @@ ul.copyright svg {
   border-radius: 9px;
 }
 
+.heroWrap.orderHero .priceBox .featureImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .heroWrap.orderHero .priceBox:first-child {
   border-color: #FFA400;
   background-color: #FCFCFC;
 }
 
 .heroWrap.orderHero .priceBox:first-child h3 {
-  color: #236192;
+  color: #FFA400;
 }
 
 .heroWrap.orderHero .priceBox:first-child p {
@@ -736,7 +743,7 @@ ul.copyright svg {
 }
 
 .heroWrap.orderHero .priceBox h3 {
-  color: #FFA400;
+  color: #236192;
   font-weight: 700;
   font-size: 30px;
 }
